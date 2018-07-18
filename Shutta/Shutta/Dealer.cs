@@ -31,20 +31,19 @@ namespace Shutta
                         _cards.Add(card);
                     }
                 }
-
-                _cards = _cards.OrderBy(x => Guid.NewGuid()).ToList();
-
-                _index = 0;
             }
+                _cards = _cards.OrderBy(x => Guid.NewGuid()).ToList();
+                _currentIndex = 0;
         }// end of Shuffle()
 
         //카드 1장 주기1
-        private int _index = 0;
+        private int _currentIndex = 0;
         
         public Card GetCard()
         {
-            Card card = _cards[_index];
-            _index++;
+            Card card = _cards[_currentIndex];
+            _currentIndex++;
+            Console.WriteLine($"인덱스 갯수는 : {_currentIndex}");
             return card;
         }
     }
