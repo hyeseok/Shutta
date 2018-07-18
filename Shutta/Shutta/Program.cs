@@ -17,7 +17,7 @@ namespace Shutta
             Board board = new Board();
 
             //스코럴
-            Scorer scorer = new Scorer();
+            Scorer scorer = new SimpleScorer();
 
             //플레이어
             //List는 동적배열

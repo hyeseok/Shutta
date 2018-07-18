@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Shutta
 {
-    public class Scorer
+    public abstract class Scorer
     {
         /// <summary>
         /// 승자를 찾는다.
@@ -26,18 +26,8 @@ namespace Shutta
                 return null;
         }
 
-        private int CalculateScore(Player p)
-        {
-            int score = p.cards[0].Number + p.cards[1].Number;
-            score = score % 10;
+        private int _starategyType;
 
-            if (p.cards[0].Number == p.cards[1].Number)
-                score += 100;
-
-            if (p.cards[0].IsKwang && p.cards[1].IsKwang)
-                score += 10000;
-
-            return score;
-        }
+        protected abstract int CalculateScore(Player p);
     }
 }
