@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-//섯다게임 구현하기~
+//섯다게임 구현하기~!
 namespace Shutta
 {
     class Program
