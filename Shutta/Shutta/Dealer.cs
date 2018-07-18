@@ -15,6 +15,7 @@ namespace Shutta
         //카드 섞기 구현
         public void Shuffle()
         {
+            _cards.Clear(); // 20개씩 만든 카드를 초기화해서 다시 1번째 배열부터 정렬
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 2; j++)
