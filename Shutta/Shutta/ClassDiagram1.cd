@@ -29,7 +29,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Shutta.Scorer" Collapsed="true">
-    <Position X="1.5" Y="1.5" Width="1.5" />
+    <Position X="1.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABBAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Scorer.cs</FileName>
@@ -47,6 +47,13 @@
     <TypeIdentifier>
       <HashCode>ABBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BasicScorer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Shutta.Program">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="맑은 고딕" Size="9" />
