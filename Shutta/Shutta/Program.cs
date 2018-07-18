@@ -43,6 +43,7 @@ namespace Shutta
                 // 카드 나눠주기(각 플레이어에게 2장씩 준다)
                 for (int i = 0; i < players.Count; i++)
                 {
+                    players[i].cards.Clear();
                     for (int j = 0; j < 2; j++)
                     {
                         Card card = dealer.GetCard();
@@ -72,13 +73,17 @@ namespace Shutta
         {
             for (int i = 0; i < players.Count; i++)
             {
-                Console.WriteLine($"P{players[i].No} : {players[i].Money}");
+                Console.WriteLine($"P{players[i].No}번 : {players[i].Money}\\");
+                
 
                 for (int j = 0; j < 2; j++)
-                    Console.Write(players[i].cards[j].ToText() + " / ");
+                    Console.Write(players[i].cards[j].ToText() + "카드 / ");
+                Console.WriteLine();
             }
 
-            Console.WriteLine($"승자는 {winner.No}.");
+            
+            Console.WriteLine($"승자는 : {winner.No}번 입니다.");
+            Console.WriteLine();
 
         }
 

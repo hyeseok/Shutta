@@ -20,5 +20,10 @@ namespace Shutta
             }
             return text;
         }
+
+        public override string ToString()
+        {
+            return ToText();
+        }
     }
 }
