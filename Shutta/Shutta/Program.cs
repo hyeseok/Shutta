@@ -10,6 +10,7 @@ namespace Shutta
     {
         static void Main(string[] args)
         {
+
             //딜러
             Dealer dealer = new Dealer();
 

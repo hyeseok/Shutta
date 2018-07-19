@@ -1,4 +1,11 @@
-﻿using System;
+﻿// architecture (HTML + CSS)
+// coder
+// programmer (developer)
+// architecture
+// tester (!= Quality Assurance), Unit Test
+// Project Manager / Product Manager
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -44,7 +51,7 @@ namespace Shutta
         {
             Card card = _cards[_currentIndex];
             _currentIndex++;
-            Console.WriteLine($"인덱스 갯수는 : {_currentIndex}");
+            //Console.WriteLine($"인덱스 갯수는 : {_currentIndex}");
             return card;
         }
     }
